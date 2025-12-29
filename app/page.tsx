@@ -1,11 +1,13 @@
-import Hero from "@/components/landing/Hero"; // ← Import Hero component
-import Features from "@/components/landing/Features"; // ← Import Features component
+import Hero from "@/components/landing/Hero";
+import Features from "@/components/landing/Features";
+import Footer from "@/components/landing/Footer";
 
 export default function Home() {
   return (
     <main>
-      <Hero /> {/* ← Display Hero section */}
-      <Features /> {/* ← Display Features section */}
+      <Hero />
+      <Features />
+      <Footer />
     </main>
   );
 }
