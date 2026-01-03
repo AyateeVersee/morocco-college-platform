@@ -1,6 +1,6 @@
-import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
 import type { Metadata } from "next";
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "KeyBridge - Your Path to US Universities",
@@ -14,10 +14,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider>
-      <html lang="en">
-        <body>{children}</body>
-      </html>
-    </ClerkProvider>
+    <html lang="en">
+      <body>
+        <Providers>{children}</Providers>
+      </body>
+    </html>
   );
 }
